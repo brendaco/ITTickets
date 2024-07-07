@@ -1,0 +1,67 @@
+<!--Author: 	Carlton Louie, Kianny Calvo, Brenda Coutino
+    Class:		CSC 337
+	File:		ticket.html
+	Assignment:	Final Project
+	This html file makes the page that allows users to view one ticket.
+-->
+
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+    <meta charset = "utf-8">
+    <title>Ticket</title>
+    <link rel = "stylesheet" 
+        type = "text/css" 
+        href = "./ticket.css">
+    <link rel="icon" 
+        type="image/x-icon"
+        href="./images/favicon.ico">
+</head>
+
+<body>
+    <h1>Ticket View</h1> 
+
+    <h2 id="title">Ticket Title</h2>
+
+    <div class="leftContainer">
+        <dl>
+            <dt>Requested For:</dt>
+                <dd id="client"></dd>
+            <dt>Created:</dt>
+                <dd id="date"></dd>
+            <dt>Type:</dt>
+                <dd id="type"></dd>
+            <dt>Priority:</dt>
+                <dd id="priority"></dd>
+            <dt>Status</dt>
+                <dd id="status"></dd>
+        </dl>
+    </div>
+
+    <div class="rightContainer">
+        <p>Description:</p>
+        <p id="description"></p>
+    </div>
+
+    <button class="openButton" onclick="openForm()">Chat</button>
+
+    <div class="chatPopup" id="chatForm">
+        <form class="formContainer" name="message"></form>
+        <div id="chatBox"></div>
+        <input name="userMsg" type="text" id="userMsg">
+        <input name="submitMsg" type="submit" id="submitMsg" class="btn" value="Send" 
+            onclick="sendMsg()">
+        <button type="button" class="btn" id="buttonClose" onclick="closeForm()">Close</button>
+    </div>
+
+    <button type="button" class="collapsible">Update Status</button>
+
+    <div class="content">
+        <input id="inProgress" type="submit" value="In-progress" onclick="statusUpdate(this)">
+        <input id="closed" type="submit" value="Closed" onclick="statusUpdate(this)">
+    </div>
+
+    <script src = "./ticket.js"></script>
+</body>
+
+</html>

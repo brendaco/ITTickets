@@ -1,0 +1,94 @@
+<!--Author:     Carlton Louie, Kianny Calvo, Brenda Coutino
+    Class:      CSC 337
+    File:       home.html
+    Assignment: Final Project
+    This html file makes the home page for clients.
+-->
+
+<!DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Home</title>
+        <link rel = "stylesheet" 
+            type = "text/css" 
+            href = "./home.css">
+        <link rel="icon" 
+          type="image/x-icon"
+          href="./images/favicon.ico">
+    </head>
+    
+    <body>
+        <div id = "header">
+        <h1>Service Desk</h1>
+        </div>
+        
+        <div id = "leftBar">
+            <h2>Your Tickets</h2>
+            <div class="ticketList">
+            <table>
+                <thead>
+                    <tr>
+                    <th>Id</th>
+                    <th>Title</th>
+                    <th>Created</th>
+                    <th>Priority</th>
+                    <th>State</th>
+                    </tr>
+                </thead>
+                <tbody id="clientTicketTable">
+
+                </tbody>
+            </table>
+            </div>
+        </div>
+        
+        <div id = "rightBar">
+        <h2>Create A Ticket</h2>
+        <form>
+          <table>
+            <tr>
+              <td>Ticket Type</td>
+              <td id="radioContainer">
+                <input type="radio" name="type" id="help" value="help" required>
+                <label for="help">Help Request</label>
+                <input type="radio" name="type" id="purchase" value="purchase">
+                <label for="purchase">Purchase Request</label>
+                <input type="radio" name="type" id="website" value="website">
+                <label for="website">Website Request</label>
+              </td>
+            </tr>
+            <tr>
+              <td><label for="priority">Priority</label></td>
+              <td><select id="priority" name="type" required>
+                <option value="">Please Select a Priority Level</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+              </select></td>
+            <tr>
+              <td><label for="title">Title</label></td>
+              <td><input type="text" id="title" name="title" required></td>
+            </tr>
+            <tr>
+              <td><label for="desc">Description</label></td>
+              <td><textarea id="desc" name="desc" rows="10" cols="40" required></textarea></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input id="submit"  type="submit" onclick="createTicket()"></td>
+            </tr>
+          </table>
+        </form>
+        </div>
+        <script src = "./home.js"></script>
+    </body>
+    
+    </html>
+    

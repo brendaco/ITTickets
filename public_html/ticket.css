@@ -1,0 +1,193 @@
+/*	Author: 	Carlton Louie, Kianny Calvo, Brenda Coutino
+    Class:		CSC 337
+    File:		ticket.css
+    Assignment:	Final Project
+    This file is for the styling of the ticket html page.
+*/
+
+body {
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle, lightgrey 1px, white 1px);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    height: 20%;
+    padding: 19px;
+    text-align: center;
+    margin-bottom: 0;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+h2 {
+    height: 16%;
+    padding: 4px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0px;
+    border-bottom: 3px solid black;
+}
+
+#description {
+    height: 350px;
+    overflow: auto;
+}
+
+.leftContainer {
+    position: fixed;
+	right: 50%;
+    left: 1%;
+	padding-left: 20px;
+    padding-top: 20px;
+    line-height: 28px;
+    height: 350px;
+    margin-bottom: 0px;
+
+
+}
+
+.rightContainer {
+    position: fixed;
+	left: 50%;
+    right: 1%;
+	padding-left: 20px;
+    padding-top: 20px;
+    line-height: 28px;
+    height: 350px;
+    margin-bottom: 0px;
+    
+}
+
+.openButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 200px;
+    padding: 10px;
+    background-color: rgb(71, 75, 68, 0.5);
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.chatPopup {
+  display: none;
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle, lightgrey 1px, white 1px);
+  position: fixed;
+  left: 40%;
+  right: 1%;
+  bottom: 3%;
+  height: 90%;
+  padding-left: 20px;
+  padding-top: 20px;
+  line-height: 28px;
+  border: 3px solid;
+  z-index: 10;
+  justify-content: center;
+}
+
+#chatBox {
+  position: relative;
+  width: 96%;
+  height: 75%;
+  border: 2px solid lightgrey;
+}
+
+#userMsg {
+  background: transparent;
+  cursor: pointer;
+  border: 2px solid lightgrey;
+  width: 65%;
+  line-height: 34px;
+}
+
+#userMsg, #submitMsg {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#submitMsg {
+  width: 30%;
+}
+
+#buttonClose {
+  width: 96%;
+}
+
+.btn {
+    background-color: rgb(71, 75, 68, 0.5);
+    color: white;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    justify-content: center;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+.btn:hover {
+  background-color: #555;
+}
+
+.formContainer, .openButton:hover {
+  background-color: #555;
+}
+
+.collapsible {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 200px;
+  padding: 10px;
+  background-color: rgb(71, 75, 68, 0.5);
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#inProgress, #closed {
+  width:200px;
+  padding: 10px;
+  background-color: rgb(71, 75, 68, 0.5);
+  color: white;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+#closed {
+  position: fixed;
+  right:20px;
+  bottom: 80px;
+}
+
+#inProgress {
+  position: fixed;
+  right: 20px;
+  bottom: 140px;
+}
+
+#closed:hover, #inProgress:hover {
+  background-color: #555;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  background-size: 20px 20px;
+  background-image: radial-gradient(circle, lightgrey 1px, white 1px);
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+}
+

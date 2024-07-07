@@ -1,0 +1,90 @@
+/*	Author: 	Carlton Louie, Kianny Calvo, Brenda Coutino
+	Class:		CSC 337
+	File:		index.css
+	Assignment:	Final Project
+	This file is for styling the index html page.
+*/
+
+body{
+    background-size: 20px 20px;
+    background-image: radial-gradient(circle, lightgrey 1px, white 1px);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#header{
+	height: 20%;
+	text-align: center;
+	padding: 19px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+.leftBar{
+	position: fixed;
+	left: 0;
+	right: 50%;
+	padding-left: 20px;
+    line-height: 30px;
+	margin: 1%;
+}
+
+.rightBar{
+	position: fixed;
+	left: 50%;
+	right: 0%;
+	padding-left: 20px;
+    line-height: 30px;
+	margin: 1%;
+}
+
+.leftBar, .rightBar {
+	height: 73%;
+	overflow: auto;
+}
+
+h2{
+	text-align: center;
+}
+
+input {
+	cursor: pointer;
+}
+
+.leftBar form, .rightBar form {
+	height: 80%;
+}
+
+.leftBar table, .rightBar table {
+	width: 95%;
+	font-size: 20px;
+}
+
+.leftBar label, .rightBar label{
+	width:100%;
+    text-align:left;
+    padding-right:10px;
+}
+
+#loginU, #loginP, #regU, #regP, label {
+	float: left;
+}
+
+.leftBar input, .rightBar input {
+	height: 20px;
+	width: 100%;
+}
+
+#submit, #regSubmit {
+	background-color: rgb(71, 75, 68, 0.5);
+    color: white;
+    border: none;
+    opacity: 0.8;
+	height: 40px;
+	font-size: 20px;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+#submit:hover , #regSubmit:hover {
+	background-color: rgb(71, 75, 68);
+}

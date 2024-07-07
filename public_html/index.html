@@ -1,0 +1,70 @@
+<!--Author:     Carlton Louie, Kianny Calvo, Brenda Coutino
+    Class:      CSC 337
+    File:       index.html
+    Assignment: Final Project
+    This html file works as the login page for the service desk.
+-->
+
+    <!DOCTYPE html>
+    <html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Login</title>
+        <link rel = "stylesheet" 
+            type = "text/css" 
+            href = "./index.css">
+        <link rel="icon" 
+            type="image/x-icon"
+            href="./images/favicon.ico">
+    </head>
+    
+    <body>
+        <div id = "header">
+            <h1>Service Desk</h1>
+        </div>
+        
+        <div class = "leftBar">
+            <h2>Login</h2>
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="loginU">Username:</label></td>
+                        <td><input type="text" id="loginU" name="username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="loginP">Password:</label></td>
+                        <td><input type="password" id="loginP" name="password" required></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input id="submit" type="submit" onclick="login()">
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+        <div class = "rightBar">
+            <h2>Register</h2>
+            <form>
+                <table>
+                <tr>
+                    <td><label for="regU">Username:</label></td>
+                    <td><input type="text" id="regU" name="username" required></td>
+                </tr>
+                <tr>
+                    <td><label for="regP">Password:</label></td>
+                    <td><input type="password" id="regP" name="password" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input id="regSubmit" type="submit" onclick="create()"></td>
+                </tr>
+            </table>
+            </form>
+        </div>
+        
+        <script src = "./index.js"></script>
+    </body>
+    
+    </html>
+    
